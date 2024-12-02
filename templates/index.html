@@ -1,0 +1,357 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>SARDOR</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content=""> 
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+<!-- Responsive-->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<!-- fevicon -->
+<link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+    <!-- header section start -->
+    <div class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"><a href="/"><img src="{% static 'images/logo.png' %}"></a></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'sayt:home_page' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'sayt:about_page' %}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'sayt:products_page' %}">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'sayt:blog_page' %}">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'sayt:contact_page' %}">Contact us</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">              
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">GET STARTED</button>
+            </form>
+            <div class="search_icon">
+              <ul>
+                <li><a href="#"><img src="{% static 'images/user-icon.png' %}"></a></li>
+                <li><a href="#"><img src="{% static 'images/bag-icon.png' %}"></a></li>
+                <li><a href="#"><img src="{% static 'images/search-icon.png' %}"></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <!-- header section end -->
+    <!-- banner section start -->
+    <div class="banner_section layout_padding">
+      <div class="container">
+        <div id="main_slider" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="your_text">Sardor Tuxtapulatov</h1>
+                  <h1 class="Shows_text">Dasturchi and Mobilagraf</h1>
+                  <p class="there_text">Mening ismim Tuxtapulatov Sardor, men dasturlash sohasiga kirib kelganimga 1yil bo'ldi.Men hozirda Navoiy viloyatidagi "Sifat o'quv markazi"da o'qib kelmoqdaman</p>
+                  <div class="start_bt"><a href="{% url 'sayt:about_page' %}">Jamoa</a></div>
+                  <div class="read_bt"><a href="{% url 'sayt:contact_page' %}">Bog'lanish</a></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="images_1"><img src="{% static 'images/img-1.png' %}"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="your_text">Sardor Tuxtapulatov</h1>
+                  <h1 class="Shows_text">Dasturchi and Mobilagraf</h1>
+                  <p class="there_text">Mening ismim Tuxtapulatov Sardor, men dasturlash sohasiga kirib kelganimga 1yil bo'ldi.Men hozirda Navoiy viloyatidagi "Sifat o'quv markazi"da o'qib kelmoqdaman</p>
+                  <div class="start_bt"><a href="{% url 'sayt:about_page' %}">Jamoa</a></div>
+                  <div class="read_bt"><a href="{% url 'sayt:contact_page' %}">Bog'lanish</a></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="images_1"><img src="{% static 'images/img-1.png' %}"></div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6">
+                  <h1 class="your_text">Sardor Tuxtapulatov</h1>
+                  <h1 class="Shows_text">Dasturchi and Mobilagraf</h1>
+                  <p class="there_text">Mening ismim Tuxtapulatov Sardor, men dasturlash sohasiga kirib kelganimga 1yil bo'ldi.Men hozirda Navoiy viloyatidagi "Sifat o'quv markazi"da o'qib kelmoqdaman</p>
+                  <div class="start_bt"><a href="#">Jamoa</a></div>
+                  <div class="read_bt"><a href="#">Bog'lanish</a></div>
+                </div>
+                <div class="col-md-6">
+                  <div class="images_1"><img src="{% static 'images/img-1.png' %}"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+            <i class="fa-arrow-left"><img src="{% static 'images/left-arrow.png' %}"></i>
+          </a>
+          <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+            <i class="fa-angle-right"><img src="{% static 'images/right-arrow.png' %}"></i>
+          </a>
+        </div>
+          <div class="banner_section_2">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="box_main">
+                  <div class="internet_icon"></div>
+                  <h4 class="broadband_text">Back End developer</h4>
+                  <p class="many_text">Men hoizrda Back end ni Api darslarini o'rganmoqdaman</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="box_main active">
+                  <div class="internet_icon1"></div>
+                  <h4 class="broadband_text active">Front End developer</h4>
+                  <p class="many_text active">Men Front End dan Html Css ni o'rganganman</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-12">
+                <div class="box_main">
+                  <div class="internet_icon2"></div>
+                  <h4 class="broadband_text">SMM and Mobilography</h4>
+                  <p class="many_text">Men "NAJOT TA'LIM ning SMM kursida o'qiganman"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    <!-- banner section end -->
+    </div>
+    <!-- about section start -->
+    <div class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image_2"><img src="{% static 'images/img-2.png' %}"></div>
+          </div>
+          <div class="col-md-6">
+            <h1 class="live_text">MY TEAM
+            
+            </h1>
+            <p class="lorem_text">Bizning "SIFAT" O'quv markazimizda jamoasi ahil va inoq</p>
+            <div class="online_bt_main">
+              <div class="online_bt"><a href="https://sifatedu.uz/">VEB SAYT</a></div>
+              <div class="online_bt1"><a href="https://t.me/sifatedu">Telegram kanal</a></div>
+              <div class="read_bt1"><a href="{% url 'sayt:home_page' %}">Asosiy menu</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+    <!-- product section start -->
+    <div class="product_section layout_padding">
+      <div class="container">
+        <h2 class="tariffs_text">SIFAT</h2>
+        <h1 class="choose_text">Markazdagi kurslar</h1>
+        <p class="lorem_text1"></p>
+        <div class="product_section2">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="easy_text">Python kursi</h2>
+              <h1 class="internet_text">1 oy o'qish</h1>
+              <div class="month_main clearfix">
+                <h1 class="dolor_text">$0</h1>
+                <h2 class="month_text">Oyiga</h2>
+                <p class="long_text">Asilbek Ismoilov
+             </p>
+              </div>
+              <div class="seemore_main">
+                <div class="see_more"><a href="https://t.me/sifatedu_admin">BOG'LANISH</a></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="easy_text">Kompyuter savodxonligi</h2>
+              <h1 class="internet_text">1yarim oy o'qish</h1>
+              <div class="month_main clearfix">
+                <h1 class="dolor_text">$0</h1>
+                <h2 class="month_text">Oyiga</h2>
+                <p class="long_text">Madiyorbek Odilov</p>
+              </div>
+              <div class="seemore_main">
+                <div class="see_more"><a href="https://t.me/sifatedu_admin">BOG'LANISH</a></div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h2 class="easy_text">Django kurslari</h2>
+              <h1 class="internet_text">9 0y quyish</h1>
+              <div class="month_main clearfix">
+                <h1 class="dolor_text">$100</h1>
+                <h2 class="month_text">Oyiga</h2>
+                <p class="long_text">Muslimbek Baratov</p>
+              </div>
+              <div class="seemore_main">
+                <div class="see_more"><a href="https://t.me/sifatedu_admin">BOG'LANISH</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product section end -->
+    <!-- contact section start -->
+    <div class="contact_section layout_padding">
+      <div class="container">
+        <h1 class="check_text">Kurslarimizda o'qish istagi bo'lganlar uchun</h1>
+        <div class="contact_section2">
+          <div class="addres_main">
+            <div class="input_bg">
+              <h3 class="fact_text">Bu yerga o'z GMAIL pochtangizni yozing va junatish tugmasini bosing admin sizga habar yozadi</h3>
+              <input type="text" class="address_text" placeholder="Enter your address" name="text">
+              <button type="button" class="get_bt">BOG'LANISH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact section end -->
+    <!-- client section start -->
+    <div class="client_section layout_padding">
+      <div class="container">
+        <h1 class="client_taital">Sardor Tuxtapulatov</h1>
+        <div class="client_section2 layout_padding">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="client_image"><img src="{% static 'images/img-3.png' %}"></div>
+            </div>
+            <div class="col-sm-8">
+              <div class="miller_text">Life<span class="quote_icon"><img src="{% static 'images/quote-icon.png' %}"></span></div>
+              <p class="ipsum_text">Mening ismim Tuxtapulatov Sardor men 15yoshdaman hozirda "SIFAT" o'quv markazida o'qib kelmoqdaman. Biz hozir Muslimbek Baratov ustozimizdan API darslarini o'rganmoqdamiz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- client section end -->
+    <!-- subscribe section start -->
+    <div class="subscribe_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h1 class="subscribe_text">Murojat</h1>
+          </div>
+          <div class="col-sm-8">
+            <div class="mail_main">
+              <input type="text" class="address_text1" placeholder="Enter your address" name="text">
+              <button type="button" class="get_bt1">BOG'LANISH</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  clsubscribe section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="fooer_logo"><img src="{% static 'images/footer-logo.png' %}"></div>
+            <h1 class="customer_text">CUSTOMER SERVICE</h1>
+            <p class="footer_lorem_text">There are many variat
+ions of passages of L
+orem Ipsum available
+, but the majority h
+ave suffered altera
+tion in some form, by </p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">LET US HELP YOU</h1>
+            <p class="footer_lorem_text">There are many variat
+ions of passages of L
+orem Ipsum available
+, but the majority h
+ave suffered altera
+tion in some form, by </p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">INFORMATION</h1>
+            <p class="footer_lorem_text1">About Us<br>
+Careers<br>
+Sell on shopee<br>99`
+Press & News<br>
+Competitions<br>
+Terms & Conditions</p>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h1 class="customer_text">OUR SHOP</h1>
+            <p class="footer_lorem_text">There are many variat
+ions of passages of L
+orem Ipsum available
+, but the majority h
+ave suffered altera
+tion in some form, by </p>
+          <div class="social_icon">
+            <ul>
+              <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+              <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+              <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
+              <li><a href="#"><img src="{% static 'images/linkedin-icon.png' %}"></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <div class="border"></div>
+        <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+      </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'js/plugin.js' %}"></script>
+    <!-- sidebar -->
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <!-- javascript --> 
+    <script src="{% static 'js/owl.carousel.js' %}"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+</body>
+</html>
